@@ -1,0 +1,17 @@
+@import "normalize";
+@import "font/_fonts"; //шрифты
+@import "font/font-awesome.scss"; //иконки
+@import "font/variables"; //иконки
+@import "_colors"; //цвета
+@import "_screen"; //размеры
+@import "_mixins"; //миксины
+
+
+@import "_blocks/header";
+@import "_blocks/reviews";
+@import "_blocks/request";
+@import "_blocks/thanks";
+@import "_blocks/footer";
+@import "_blocks/main-menu";
+@import "_blocks/button-menu";
+@import "_blocks/service-business";

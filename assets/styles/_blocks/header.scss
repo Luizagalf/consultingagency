@@ -1,0 +1,206 @@
+@import "../normalize";
+@import "../font/_fonts"; //шрифты
+@import "../font/font-awesome.scss"; //иконки
+@import "../font/variables"; //иконки
+@import "../_colors"; //цвета
+@import "../_screen"; //размеры
+@import "../_mixins"; //миксины
+
+.header-logo__img:hover {
+    border: transparent;
+    transform: scale(1.3);
+}
+
+.header-left__subject,
+.header-left__subtitle,
+.header-right__subject,
+.header-right__subtitle,
+.header-left__button {
+    color: $white;
+    @include roboto;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.header-left__button {
+    text-align: center;
+    color: $white;
+    background-color: $light-orange;
+    border: $light-orange;
+    border-radius: 30px;
+    min-width: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 0;
+    min-height: 60px;
+    cursor: pointer;
+}
+
+.header-left__button:hover {
+    background: $red;
+}
+
+@media screen and (max-width: #{$tablet - 1px}) {
+    .header-wrapper {
+        background-position-x: center;
+        background-position-y: center;
+        background-color: $background-black;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url(/assets/images/features-background.jpg);
+        background-size: cover;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .header {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .header-logo__img {
+        width: 140px;
+        height: 130px;
+        border-radius: 50%;
+        background-color: transparent;
+        transition: 1s;
+        display: block;
+    }
+
+    .header-left__subject {
+        @include title-font_mob;
+    }
+
+    .header-left__subtitle {
+        @include subtitle-font;
+    }
+
+    .header-right__subject {
+        @include subtitle-font_mob;
+    }
+
+    .header-right__subtitle {
+        @include text-font_mob;
+    }
+
+    .header-left {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 40px;
+        padding: 30px;
+        justify-content: space-around;
+        align-content: space-around;
+        align-items: center;
+        text-align: center;
+        justify-self: center;
+    }
+
+    .header-right {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .header-wrapper {
+        background-position-x: center;
+        background-position-y: center;
+        background-size: cover;
+        background-color: $background-black;
+        background-image:
+            url(/assets/images/Картинка-для-хэдера.jpg);
+        width: 100vw;
+        height: 900px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-logo__img {
+        padding-top: 90px;
+        width: 140px;
+        height: 130px;
+        border-radius: 50%;
+        background-color: transparent;
+        transition: 1s;
+        display: block;
+    }
+
+    .header-logo__img:hover {
+        border: transparent;
+        transform: scale(1.3);
+    }
+
+    .header-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header-left {
+        display: grid;
+        grid-template-rows: 4fr 3fr 1fr;
+        align-content: space-between;
+        text-align: center;
+        justify-self: center;
+        padding-top: 60px;
+    }
+
+    .header-left__subject {
+        @include title-font;
+        font-size: 2.8em;
+        line-height: 70px;
+    }
+
+    .header-left__subtitle {
+        @include title-font_mob;
+        font-weight: 400;
+    }
+
+    .header-right__subject {
+        @include subtitle-font_mob;
+        font-size: 1.7em;
+    }
+
+    .header-right__subtitle {
+        @include subtitle-font-min;
+        font-size: 1.3em;
+    }
+
+    .header-left__button:hover {
+        background: $red;
+    }
+}
+
+@media screen and (min-width: $tablet) and (max-width: #{$desktop - 130px}) {
+    .right-text {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        align-content: space-around;
+        padding-left: 40%;
+        text-align: end;
+    }
+}
+
+@media screen and (min-width: #{$desktop - 129px}) {
+    .right-text {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        align-content: space-around;
+        padding-left: 40%;
+    }
+
+    .header-left__btn {
+        align-self: flex-end;
+    }
+}
+
+body {
+    overflow-x: hidden;
+}

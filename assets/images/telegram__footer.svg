@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="400" height="400" viewBox="0 0 400 400" xml:space="preserve">
+<desc>Created with Fabric.js 3.6.2</desc>
+<defs>
+</defs>
+<g transform="matrix(7.14 0 0 7.14 200 200)" id="Telegram"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(246,118,13); fill-rule: nonzero; opacity: 1;"  transform=" translate(-15.99, -16.03)" d="M 24.19 27.11 a 1 1 0 0 1 -0.58 -0.18 L 14 20.19 a 1 1 0 0 1 -0.42 -0.73 a 1 1 0 0 1 0.29 -0.8 L 16.49 16 L 12 18.81 l 2 4.59 l 0.88 -0.88 a 1 1 0 0 1 1.42 1.41 L 14.3 25.85 a 1 1 0 0 1 -1.63 -0.31 L 9.78 18.8 a 1 1 0 0 1 0.4 -1.24 L 22.7 9.85 a 1 1 0 0 1 1.23 1.56 l -7.82 7.82 l 7.44 5.22 l 4 -17 L 5.78 15.55 l 2.41 1 a 1 1 0 1 1 -0.75 1.85 L 2.63 16.45 a 1 1 0 0 1 0 -1.87 L 28.65 5 a 1 1 0 0 1 1 0.19 a 1 1 0 0 1 0.31 1 L 25.16 26.34 a 1 1 0 0 1 -0.62 0.71 A 1.07 1.07 0 0 1 24.19 27.11 Z" stroke-linecap="round" />
+</g>
+</svg>

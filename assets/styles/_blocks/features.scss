@@ -1,0 +1,131 @@
+@import "../normalize";
+@import "../font/_fonts"; //шрифты
+@import "../_colors"; //цвета
+@import "../_screen"; //размеры
+@import "../_mixins"; //миксины
+
+.features-wrapper {
+    width: 100vw;
+}
+
+.features-title,
+.features-subtitle,
+.features__item-title,
+.features__item-subtitle {
+    @include roboto;
+    color: $white;
+}
+
+.features {
+    background-color: #000;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(/assets/images/features-background.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    row-gap: 40px;
+    flex-direction: column;
+}
+
+.features__title-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    row-gap: 40px;
+    flex-direction: column;
+}
+
+.features__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    row-gap: 20px;
+    flex-direction: column;
+}
+
+.features__item-icon {
+    align-self: center;
+}
+
+@media screen and (min-width: #{$big-tablet + 1px}) {
+    .features {
+        padding: 120px;
+    }
+
+    .features__body {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-between;
+    }
+
+    .features__item-icon {
+        width: 100px;
+        height: 100px;
+        @include zero;
+    }
+
+    .features__icon {
+        width: 100%;
+        @include zero;
+    }
+
+    .features-title {
+        @include title-font;
+    }
+
+    .features-subtitle {
+        @include subtitle-font-text;
+    }
+
+    .features__item-title {
+        @include subtitle-font;
+    }
+
+    .features__item-subtitle {
+        @include text-font-min;
+        line-height: 1.55;
+    }
+}
+
+
+@media screen and (max-width: $big-tablet) {
+    .features {
+        padding: 30px;
+    }
+
+    .features__body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        row-gap: 10px;
+        flex-direction: column;
+    }
+
+    .features__icon {
+        width: 70px;
+        @include zero;
+    }
+
+    .features-title {
+        @include title-font_mob;
+    }
+
+    .features-subtitle {
+        @include text-font-min_mob;
+    }
+
+    .features__item-title {
+        @include subtitle-font_mob;
+    }
+
+    .features__item-subtitle {
+        @include text-font-min_mob;
+    }
+}

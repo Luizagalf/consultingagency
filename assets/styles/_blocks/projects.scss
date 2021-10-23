@@ -1,0 +1,162 @@
+@import "../normalize";
+@import "../font/_fonts"; //шрифты
+@import "../_colors"; //цвета
+@import "../_screen"; //размеры
+@import "../_mixins"; //миксины
+
+.projects-wrapper {
+    width: 100vw;
+    background: $background-gray;
+}
+
+.projects {
+    display: grid;
+    grid-template-rows: 3% 1fr;
+    padding: 120px 0px 50px 0px;
+    row-gap: 20px;
+}
+
+.item-pfoto-projects__img,
+.item-text-projects__img {
+    max-width: 100%;
+}
+
+.item-pfoto-projects__text,
+.item-text-projects__text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    row-gap: 20px;
+}
+
+.triangle-bottomleft {
+    border-bottom: 50px solid $light-orange;
+    border-right: 100vw solid transparent;
+}
+
+.projects__list-item-text {
+    border-top: 2px solid $light-orange;
+    border-bottom: 2px solid $light-orange;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.projects__list-item-pfoto {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.text-projects {
+    @include roboto;
+    color: $white;
+}
+
+.text-projects__title {
+    display: grid;
+}
+
+.projects-title {
+    @include roboto;
+    color: $white;
+    text-align: center;
+}
+
+.text-projects__title-p {
+    color: $text-gray;
+}
+
+.instagram_btn-img {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.instagram_btn-img-none {
+    display: none;
+}
+
+@media screen and (min-width: $desktop) {
+    .projects__list {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 0px 60px;
+    }
+
+    .projects__list-item-pfoto,
+    .projects__list-item-text {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80vw;
+        column-gap: 20px;
+    }
+
+    .item-text-projects__img {
+        justify-self: flex-end;
+    }
+
+    .projects__list-item-text {
+        justify-self: flex-end;
+    }
+
+    .projects-title {
+        @include title-font;
+    }
+
+    .text-projects__title-h4 {
+        @include subtitle-font;
+    }
+
+    .text-projects__title-p,
+    .text-projects__description {
+        @include text-font-min;
+    }
+}
+
+@media screen and (min-width: #{$tablet + 1px}) and (max-width: #{$desktop - 1px}) {
+    .projects__list {
+        padding: 0px 30px;
+        row-gap: 20px;
+    }
+
+    .projects__list-item-pfoto,
+    .projects__list-item-text {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    .projects-title {
+        @include title-font;
+    }
+    
+    .text-projects__title-h4 {
+        @include subtitle-font;
+    }
+    
+    .text-projects__title-p,
+    .text-projects__description {
+        @include text-font-min;
+    }
+}
+
+
+@media screen and (max-width: $tablet) {
+    .projects__list {
+        padding: 0px 30px;
+    }
+
+    .projects-title {
+        @include title-font_mob;
+    }
+    
+    .text-projects__title-h4 {
+        @include subtitle-font_mob;
+    }
+    
+    .text-projects__title-p,
+    .text-projects__description {
+        @include text-font-min_mob;
+    }
+
+
+}

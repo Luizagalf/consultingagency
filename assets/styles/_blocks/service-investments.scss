@@ -1,0 +1,352 @@
+@import "../normalize";
+@import "../font/_fonts"; //шрифты
+@import "../_colors"; //цвета
+@import "../_screen"; //размеры
+@import "../_mixins"; //миксины
+
+.investments-wrapper {
+    width: 100vw;
+    background: $background-gray;
+    @include roboto;
+    color: $white;
+}
+
+.investments-title {
+    padding: 0px;
+    margin: 0px;
+    align-content: center;
+    text-align: center;
+}
+
+.investments-info {
+    justify-content: center;
+}
+
+.investments-info-list li:before {
+    padding-right: 10px;
+    font-weight: bold;
+    color: $light-orange;
+    content: "\2714";
+    transition-duration: 0.5s;
+}
+
+.investments-result-1__list li:before {
+    padding-right: 10px;
+    font-weight: bold;
+    color: $light-orange;
+    content: "\2714";
+    transition-duration: 0.5s;
+}
+
+.investments-result-2__list li:before {
+    padding-right: 10px;
+    font-weight: bold;
+    color: $light-orange;
+    content: "\2714";
+    transition-duration: 0.5s;
+}
+
+.investments-info-list {
+    padding: 0;
+    list-style: none;
+}
+
+.investments-result-1__list {
+    padding: 0;
+    list-style: none;
+}
+
+.investments-result-2__list {
+    padding: 0;
+    list-style: none;
+}
+
+.triangle-bottomleft {
+    border-bottom: 50px solid $light-orange;
+    border-right: 100vw solid transparent;
+}
+
+@media screen and (min-width: $tablet) {
+
+    .investments {
+        display: grid;
+        grid-template-rows: 18% 1.5fr 1.2fr;
+        grid-template-columns: 90%;
+        justify-content: center;
+        padding: 30px 0px 50px 0px;
+    }
+
+    .investments-title {
+        @include title-font;
+        margin-top: 40px;
+    }
+
+    .investments-info {
+        display: grid;
+        grid-template-columns: 57% 40%;
+    }
+
+    .investments-info__text {
+        align-self: center;
+    }
+
+    .info-text__p {
+        @include subtitle-font-min;
+    }
+
+    .investments-info__img {
+        display: grid;
+    }
+
+    .investments-info__text {
+        @include subtitle-font-min;
+        text-indent: 20px;
+        margin-right: 30px;
+    }
+
+    .investments-info-list__p {
+        @include subtitle-font-min;
+        padding-top: 20px;
+    }
+
+    .investments-info-list li {
+        padding: 6px;
+    }
+
+    .investments-info-list {
+        padding: 0;
+        margin: 15px;
+    }
+
+    .investments-result-1__list {
+        padding: 0;
+    }
+
+    .investments-result-2__list {
+        padding: 0;
+    }
+
+    .investments-info-list__item,
+    .investments-result-1-list__item,
+    .investments-result-2-list__item {
+        @include subtitle-font-min;
+    }
+
+    .investments-result {
+        display: grid;
+        grid-template-rows: 10% 1fr;
+        row-gap: 2%;
+        border-top: 2px solid $light-orange;
+        padding-top: 20px;
+    }
+
+    .investments-result-title {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        @include subtitle-font-min;
+        text-align: center;
+    }
+
+    .investments-result-lists {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10%;
+    }
+
+    .investments-result-1__title,
+    .investments-result-2__title {
+        @include subtitle-font-min;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .investments-result-1__list li {
+        padding: 6px;
+    }
+
+    .investments-result-2__list li {
+        padding: 6px;
+    }
+
+    .investments-img {
+        justify-self: center;
+        align-self: center;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+}
+
+@media screen and (min-width: $phone) and (max-width: #{$tablet - 1px}) {
+
+    .investments {
+        padding: 70px 40px 50px 40px;
+    }
+
+    .investments-title {
+        @include title-font_mob;
+    }
+
+    .investments-info {
+        height: 100%;
+    }
+
+    .investments-info__text {
+        text-indent: 1.3em;
+        @include subtitle-font-min_mob;
+    }
+
+    .investments-info__img {
+        padding: 20px 0px 20px 0px;
+
+    }
+
+    .investments-info-list__p {
+        @include subtitle-font-min_mob;
+        margin-bottom: 15px;
+    }
+
+    .investments-info-list {
+        margin-bottom: 15px;
+    }
+
+    .info-text__p {
+        @include subtitle-font-min_mob;
+        margin-bottom: 25px;
+    }
+
+    .investments-info-list li {
+        padding: 2px;
+        @include subtitle-font-min_mob;
+    }
+
+    .investments-result {
+        height: 90%;
+        padding-top: 20px;
+    }
+
+    .investments-result-title {
+        text-align: center;
+        @include subtitle-font_mob;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .investments-result-lists {
+        height: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .investments-result-1__title,
+    .investments-result-2__title {
+        @include subtitle-font-min_mob;
+    }
+
+    .investments-result-1__list li {
+        padding: 2px;
+        @include subtitle-font-min_mob;
+    }
+
+    .investments-result-2__list li {
+        padding: 2px;
+        @include subtitle-font-min_mob;
+    }
+
+    .investments-img {
+        justify-self: center;
+        align-self: center;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+}
+
+@media screen and (max-width: #{$phone - 1px}) {
+
+    .investments {
+        padding: 50px 40px 50px 40px;
+    }
+
+    .investments-title {
+        @include title-font_mob;
+    }
+
+    .investments-info {
+        height: 100%;
+    }
+
+    .investments-info__text {
+        @include subtitle-font-min_mob;
+    }
+
+    .investments-info__img {
+        padding: 20px 0px 20px 0px;
+        background-image: url(/assets/images/investments.png);
+        background-size: cover;
+        height: 230px;
+    }
+
+    .investments-info-list__p {
+        @include subtitle-font-min_mob;
+        margin-bottom: 15px;
+    }
+
+    .investments-info-list {
+        margin-bottom: 15px;
+    }
+
+    .info-text__p {
+        @include subtitle-font-min_mob;
+        margin-bottom: 25px;
+    }
+
+    .investments-info-list li {
+        padding: 2px;
+        @include subtitle-font-min_mob;
+    }
+
+    .investments-result {
+        height: 90%;
+        padding-top: 20px;
+    }
+
+    .investments-result-title {
+        text-align: center;
+        @include subtitle-font_mob;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .investments-result-lists {
+        height: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .investments-result-1__title,
+    .investments-result-2__title {
+        @include subtitle-font-min_mob;
+        margin-bottom: 20px;
+    }
+
+    .investments-result-1__list li {
+        padding: 2px;
+        @include subtitle-font-min_mob;
+    }
+
+    .investments-result-2__list li {
+        padding: 2px;
+        @include subtitle-font-min_mob;
+    }
+
+    .investments-img {
+        display: none;
+    }
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="icon" href="./assets/images/logo.png" type="png/svg">
+    <link rel="stylesheet" href="./assets/styles/contacts-page.css">
+    <link rel="stylesheet" href="./assets/styles/libs/animate/animate.css">
+    <link rel="stylesheet" href="./assets/styles/libs/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/styles/libs/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/styles/libs/font-awesome-4.6.3/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--header начало-->
+    <header>
+        <!--menu начало-->
+        <div class="main-menu">
+            <!--burger-menu начало-->
+            <div class="burger-menu">
+                <div class="burger-menu__toggle icon">
+                    <div class="hamburger"></div>
+                </div>
+                <ul class="burger-menu__list">
+                    <li class="burger-menu__item"><a href="./index.html"><img class="burger-menu__logo" src="./assets/images/logo.png" alt="logo"></a></li>
+                    <li class="burger-menu__item"><a class="burger-menu__link" href="./index.html">Главная</a></li>
+                    <li class="burger-menu__item"><a class="burger-menu__link" href="#">О компании<span class="burger-menu__arrow arrow_1"></span></a>
+                        <ul class="burger-submenu__list_1">
+                            <li class="burger-submenu__item"><a class="burger-submenu__link" href="./about-company-page.html">О компании</a></li>
+                            <li class="burger-submenu__item"><a class="burger-submenu__link" href="">Вакансии</a></li>
+                        </ul>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link" href="#">Услуги<span class="burger-menu__arrow arrow_2"></span></a>
+                        <ul class="burger-submenu__list_2">
+                            <li class="burger-submenu__item"><a class="burger-submenu__link" href="./service-business-page.html">Помощь в покупке/продаже бизнеса</a></li>
+                            <li class="burger-submenu__item"><a class="burger-submenu__link" href="./service-investments.html">Привлечение инвестиций</a></li>
+                            <li class="burger-submenu__item"><a class="burger-submenu__link" href="./service-sales-system-page.html">Выстраивание системы продаж</a></li>
+                            <li class="burger-submenu__item"><a class="burger-submenu__link" href="./service-marketing-page.html">Стратегический маркетинг</a></li>
+                            <li class="burger-submenu__item"><a class="burger-submenu__link" href="./service-automation-page.html">Автоматизация бизнеса</a></li>
+                        </ul>
+                    </li>
+                    <li class="burger-menu__item"><a class="burger-menu__link" href="./projects-page.html">Проекты</a></li>
+                    <li class="burger-menu__item"><a class="burger-menu__link" href="./reviews-page.html">Отзывы</a></li>
+                    <li class="burger-menu__item"><a class="burger-menu__link" href="./contacts-page.html">Контакты</a></li>
+                    <li class="burger-menu__item">
+                        <p class="burger-menu__text">Готовы ответить на все вопросы с 9:00 до 21:00 ежедневно!</p>
+                    </li>
+                    <li class="burger-menu__buttons">
+                        <a class="burger-menu__link_btn" href="https://www.instagram.com/karandeev_ad/" target="_blank">
+                            <div class="burger-menu__box-btn"><img class="burger-menu__icon" src="./assets/images/burger-instagram.svg" alt="instagram icon"></div></a>
+                        <a class="burger-menu__link_btn" href="https://tlgg.ru/aleksey_karandeev" target="_blank">
+                            <div class="burger-menu__box-btn"><img class="burger-menu__icon" src="./assets/images/burger-telegram.svg" alt="telegram icon"></div></a>
+                    </li>
+                </ul>
+            </div>
+            <!--burger-menu конец-->
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item_logo"><a href="./index.html"><img class="menu__logo"
+                                src="./assets/images/logo.png" alt="logo"></a></li>
+                    <li class="menu__item"><a class="menu__link" href="./index.html"><i
+                                class="fa fa-home"></i>Главная</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./about-company-page.html"><i
+                                class="fa fa-building"></i>О компании</a>
+                        <ul class="sub-menu__list">
+                            <li class="sub-menu__item"><a class="sub-menu__link" href="./about-company-page.html">О
+                                    компании</a></li>
+                            <li class="sub-menu__item"><a class="sub-menu__link"
+                                    href="./job-opportunities-page.html">Вакансии</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="#"><i class="fa fa-clipboard"></i>Услуги</a>
+                        <ul class="sub-menu__list">
+                            <li class="sub-menu__item"><a class="sub-menu__link" href="./service-business-page.html">Помощь в покупке/продаже
+                                    бизнеса</a></li>
+                            <li class="sub-menu__item"><a class="sub-menu__link" href="./service-investments.html">Привлечение инвестиций</a></li>
+                            <li class="sub-menu__item"><a class="sub-menu__link" href="./service-sales-system-page.html">Выстраивание системы продаж</a>
+                            </li>
+                            <li class="sub-menu__item"><a class="sub-menu__link" href="./service-marketing-page.html">Стратегический маркетинг</a></li>
+                            <li class="sub-menu__item"><a class="sub-menu__link" href="./service-automation-page.html">Автоматизация бизнеса</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="./projects-page.html"><i class="fa fa-gears"></i>Наши
+                            проекты</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./reviews-page.html"><i
+                                class="fa fa-comment-o"></i>Отзывы</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./contacts-page.html"><i
+                                class="fa fa-envelope"></i>Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--menu конец-->
+    <div class="header-wrapper">
+    <div class="header">
+        <div class="header-logo">
+            <img class="header-logo__img" src="./assets/images/logo.png" alt="logo">
+        </div>
+        <div class="header-content">
+            <div class="header-left">
+                <h2 class="header-left__subject"> Консалтинговое<br><span class="colortext">агентство</span> в Москве
+                </h2>
+                <p class="header-left__subtitle"> Автоматизация Вашего бизнеса за один месяц! </p>
+                <div class="header-left__btn">
+                        <form action="/index.html">
+                        <button class="header-left__button"> Подробнее </button>
+                    </form>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="right-text">
+                    <h2 class="header-right__subject"> Алексей <span class="colortext">Карандеев </span> </h2>
+                    <p class="header-right__subtitle"> <span class="colortext"> Эксперт </span>по управлению бизнесом
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </header>
+    <!--header конец-->
+
+
+    <!--menu начало-->
+    <section class="button_menu">
+        <div class="none_btn" id="none_btn">
+            <div class="button-menu__btn" id="tel_btn">
+                <a href="tel:+79688248103" target="_blank"><img class="btn-img" src="./assets/images/phone.svg" alt="tel_btn"
+                        title="Позвонить"></a>
+            </div>
+            <div class="button-menu__btn" id="mail_btn"><a href="mailto:info@pb-groupp.ru" target="_blank"><img class="btn-img"
+                        src="./assets/images/mail.svg" alt="mail_btn" title="Написать"></a>
+            </div>
+            <div class="button-menu__btn" id="whatsapp_btn"><a
+                    href="https://api.whatsapp.com/send/?phone=79688248103&text&app_absent=0" target="_blank"><img
+                        class="btn-img" src="./assets/images/whatsapp.svg" alt="whatsapp_btn"
+                        title="WhatsApp"></a>
+            </div>
+            <div class="button-menu__btn" id="telegram_btn"><a href="https://t.me/aleksey_karandeev" target="_blank"><img
+                        class="btn-img" src="./assets/images/telegram.svg" alt="telegram_btn"
+                        title="Telegram"></a>
+            </div>
+            <div class="button-menu__btn close_btn" id="close_btn"><img class="close_btn-img"
+                    src="./assets/images/close.png" alt="close_btn" title="Закрыть"></div>
+        </div>
+        <div class="main_btn" id="main_btn"><img class="main_btn-img" src="./assets/images/chat.svg" alt="main_btn"
+                title="Свяжитесь напрямую">
+        </div>
+    </section>
+    <!--menu конец-->
+
+
+    <!--menu начало-->
+    <section class="burger-menu"></section>
+    <!--menu конец-->
+
+
+    <!--contacts начало-->
+    <section class="contacts-wrapper">
+        <div class="contacts-box">
+        <img class="contacts-box__topicon" src="./assets/images/iconinfo1.png" alt="lamp">
+        <div class="contacts">
+            <h2 class="contacts-title">Контакты</h2>
+            <div class="contacts__list">
+                <div class="contacts__list-text text-contacts">
+                <p class="text-contacts__email"><span class="colortext">Электронный адрес:</span> info@pb-groupp.ru</p>
+                <p class="text-contacts__phone"><span class="colortext">Номер телефона:</span> +7(968)824-81-03</p>
+                </div>
+                <div class="contacts__list-button button-contacts">
+                    <a href="tel:+79688248103" target=“_blank”><img class="button-contacts-img" src="./assets/images/phone.svg" alt="tel"></a>
+        <a href="mailto:info@pb-groupp.ru" target=“_blank”><img class="button-contacts-img" src="./assets/images/mail.svg" alt="mail"></a>
+        <a href="https://api.whatsapp.com/send/?phone=79688248103&text&app_absent=0" target=“_blank”><img class="button-contacts-img" src="./assets/images/whatsapp.svg" alt="whatsapp"></a>
+        <a href="https://t.me/aleksey_karandeev" target=“_blank”><img class="button-contacts-img" src="./assets/images/telegram.svg" alt="telegram"></a>
+        <a href="https://www.instagram.com/karandeev_ad/" target=“_blank”><img class="button-contacts-img" src="./assets/images/instagram.svg" alt="instagram"></a>
+                </div>
+            </div>
+        </div>
+        <img class="contacts-box__bottomicon" src="./assets/images/iconinfo2.png" alt="pen">
+        </div>
+    <div class="triangle-bottomleft"></div>
+    </section>
+    <!--contacts конец-->
+
+
+    <!--request начало-->
+    <section class="request">
+        <div class="triangle-topright"></div>
+        <div class="request__main">
+        <div class="request__main__title">
+            <h2 class="request__main__title-h2">Закажите <span class="colortext">обратный</span> звонок</h2>
+        </div>
+        <div class="request__main__subtitle">
+            <p class="request__main__subtitle-p">И получите еще более подробную информацию <br />по услугам прямо <span
+                    class="colortext">сейчас</span>!</p>
+        </div>
+        <form class="request__main__form" id="request__form">
+            <input class="request__main__form__input" type="email" placeholder="Ваша эл. почта" name="email" id="email"
+                required>
+            <input class="request__main__form__input" type="text" placeholder="Ваше имя" name="name" id="name" required>
+            <input class="request__main__form__input" type="tel" placeholder="Ваш номер телефона" name="tel" id="tel"
+                required>
+            <button class="button-request__btn" id="thanks__btn" type="submit">Оставить заявку</button>
+        </form>
+        <div class="request__main__text">
+            <p class="request__main__text-p">Наш специалист свяжется с Вами в ближайшее время!</p>
+        </div>
+    </div>
+        <div class="triangle-bottomright"></div>
+    </section>
+    <!--request конец-->
+
+
+    <!--thanks начало-->
+    <section class="thanks" id="thanksform">
+        <div class="thanks-wrapper">
+            <div class="thanks__box">
+                <span class="thanks__close"><img class="thanks__close-img" src="./assets/images/cross.png"
+                        alt="cross"></span>
+                <div class="thanks__text">
+                    <h2 class="thanks__text-title">Спасибо за заявку!</h2>
+                    <p class="thanks__text-p">Наш специалист свяжется с Вами в ближайшее время</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--thanks конец-->
+
+
+    <!--footer начало-->
+    <footer class="footer-wrapper">
+        <div class="triangle-topleft"></div>
+        <div class="footer">
+            <div class="footer-btn" id="footer-btn"><img class="footer-btn-img" src="./assets/images/arrow__up.svg"/>
+            </div>
+            <div class="footer-text">
+                <h2 class="footer-text__title"> Связаться с нами</h2>
+                <p class="footer-text__subtitle"> Всегда готовы ответить на любой Ваш вопрос за максимально <br>
+                    короткий
+                    промежуток
+                    времени! </p>
+            </div>
+            <div class="footer-social">
+                <div class="footer-social__btn">
+                    <a class="instagram" href="https://www.instagram.com/karandeev_ad/" target="_blank"><img class="footer-social__btn-instagram"
+                        src="./assets/images/instagram__footer.svg" alt="instagram"></a>
+                </div>
+                <div class="footer-social__btn">
+                    <a class="telegram" href="https://tlgg.ru/aleksey_karandeev" target="_blank"><img class="footer-social__btn-telegram"
+                        src="./assets/images/telegram__footer.svg" alt="telegram"></a>
+                </div>
+                <div class="footer-social__btn">
+                    <a class="whatsapp" href="https://api.whatsapp.com/send/?phone=79688248103&text&app_absent=0" target="_blank"><img class="footer-social__btn-whatsapp"
+                        src="./assets/images/whatsapp__footer.svg" alt="whatsapp"></a>
+                </div>
+                <div class="footer-social__btn">
+                    <a class="mail" href="mailto:info@pb-groupp.ru" target="_blank"><img class="footer-social__btn-mail"
+                        src="./assets/images/mail__footer.svg" alt="mail"></a>
+                </div>
+                <div class="footer-social__btn">
+                    <a class="phone" href="tel:+79688248103" target="_blank"><img class="footer-social__btn-phone"
+                        src="./assets/images/phone__footer.svg" alt="phone"></a>
+                </div>
+            </div>
+            <div class="footer-mail">
+                <p class="footer-mail__subtitle"> Напишите нам: info@pb-groupp.ru</p>
+            </div>
+        </div>
+    </footer>
+    <!--footer конец-->
+
+
+        <script src="./assets/styles/libs/jquery/jquery-2.1.3.min.js"></script>
+        <script src="./assets/styles/libs/owl-carousel/owl.carousel.min.js"></script>
+        <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+@import "../normalize";
+@import "../font/_fonts"; //шрифты
+@import "../_colors"; //цвета
+@import "../_screen"; //размеры
+@import "../_mixins"; //миксины
+
+.request {
+    background-color: $background-gray;
+    width: 100vw;
+}
+
+.request__main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    row-gap: 40px;
+    flex-direction: column;
+}
+
+.request__main__form__input,
+.button-request__btn {
+    @include btn-input-size;
+    @include roboto;
+}
+
+.request__main__title-h2,
+.request__main__text-p,
+.request__main__subtitle-p {
+    @include roboto;
+    color: $white;
+}
+
+.button-request__btn:hover {
+    border: none;
+    background: $light-orange;
+}
+
+.button-request__btn:before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    width: 3em;
+    display: block;
+    position: absolute;
+    opacity: 1;
+    z-index: 0;
+    top: 0;
+    left: -4.5em;
+    -webkit-transform: skewX(-45deg) translateX(0);
+    transform: skewX(-45deg) translateX(0);
+    -webkit-transition: none;
+    transition: none;
+    -webkit-animation: moving 3s ease-in-out infinite;
+    -moz-animation: moving 3s ease-in-out infinite;
+    -ms-animation: moving 3s ease-in-out infinite;
+    -o-animation: moving 3s ease-in-out infinite;
+    animation: moving 3s ease-in-out infinite;
+}
+
+@keyframes moving {
+    30% {
+        -webkit-transform: skewX(-45deg) translateX(33.5em);
+        transform: skewX(-45deg) translateX(33.5em);
+    }
+
+    100% {
+        -webkit-transform: skewX(-45deg) translateX(33.5em);
+        transform: skewX(-45deg) translateX(33.5em);
+    }
+}
+
+@media screen and (min-width: #{$big-tablet + 1px}) {
+    .request__main {
+        padding: 120px 120px 70px 120px;
+    }
+
+    .request__main__form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 50px;
+        justify-content: space-between;
+        align-self: center;
+    }
+
+    .request__main__form__input {
+        box-sizing: border-box;
+        color: $black;
+        border: 1px solid $black;
+        width: 100%;
+        min-width: 190px;
+        padding: 15px;
+        border-radius: 3px;
+    }
+
+    .button-request__btn {
+        color: $white;
+        border: 1px solid $white;
+        background-color: $red;
+        border-radius: 30px;
+        width: 100%;
+        min-width: 160px;
+        cursor: pointer;
+        z-index: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: relative;
+        overflow: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .request__main__title-h2 {
+        @include title-font;
+    }
+
+    .request__main__text-p {
+        @include text-font;
+    }
+
+    .request__main__subtitle-p {
+        @include subtitle-font;
+    }
+}
+
+@media screen and (max-width: $big-tablet) {
+    .request__main {
+        padding: 60px 30px 10px 30px;
+    }
+
+    .request__main__form {
+        display: grid;
+        grid-template-rows: 0.7fr 0.8fr 1fr 1fr;
+        row-gap: 20px;
+        justify-content: space-between;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .request__main__form__input {
+        box-sizing: border-box;
+        color: $black;
+        border: 1px solid $black;
+        padding: 15px;
+        border-radius: 3px;
+    }
+
+    .button-request__btn {
+        color: $white;
+        border: 1px solid $white;
+        background-color: $red;
+        border-radius: 30px;
+        cursor: pointer;
+        z-index: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: relative;
+        overflow: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .request__main__title-h2 {
+        @include title-font_mob;
+    }
+
+    .request__main__text-p {
+        @include text-font_mob;
+    }
+
+    .request__main__subtitle-p {
+        @include subtitle-font_mob;
+    }
+}
+
+.triangle-bottomright {
+    border-bottom: 50px solid $light-orange;
+    border-left: 100vw solid transparent;
+}

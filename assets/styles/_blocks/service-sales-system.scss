@@ -1,0 +1,178 @@
+@import "../normalize";
+@import "../font/_fonts"; //шрифты
+@import "../_colors"; //цвета
+@import "../_screen"; //размеры
+@import "../_mixins"; //миксины
+
+
+.sales-system-wrapper {
+    width: 100vw;
+    background: $background-gray;
+    @include roboto;
+    color: $white;
+}
+
+.sales-system-result-2__list li:before {
+    padding-right: 10px;
+    font-weight: bold;
+    color: $light-orange;
+    content: "\2714";
+    transition-duration: 0.5s;
+}
+
+.sales-system-title {
+    text-align: center;
+}
+
+.sales-system-info__img {
+    display: grid;
+}
+
+.sales-system-img {
+    justify-self: center;
+    align-self: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.sales-system-result-1__list {
+    padding: 0;
+    list-style: none;
+}
+
+.sales-system-result-2__list {
+    padding: 0;
+    list-style: none;
+}
+
+.sales-system-result-1__title,
+.sales-system-result-2__title {
+    font-weight: 500;
+    text-align: center;
+}
+
+.sales-system-result-1__list li:before {
+    padding-right: 10px;
+    font-weight: bold;
+    color: $light-orange;
+    content: "\2714";
+    transition-duration: 0.5s;
+}
+
+.triangle-bottomleft {
+    border-bottom: 50px solid $light-orange;
+    border-right: 100vw solid transparent;
+}
+
+@media screen and (min-width : $tablet) {
+    .sales-system {
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 10% 1fr 1fr;
+        row-gap: 5%;
+        justify-content: center;
+        padding: 30px 0px;
+        margin-bottom: 30px;
+    }
+
+    .sales-system-title {
+        @include title-font;
+    }
+
+    .sales-system-info {
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-columns: 45% 45%;
+        column-gap: 3%;
+        justify-content: center;
+    }
+
+    .sales-system-info__text {
+        text-indent: 20px;
+        align-self: center;
+    }
+
+    .info-text__p {
+        @include subtitle-font;
+    }
+
+    .sales-system-result {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3%;
+        border-top: 2px solid $light-orange;
+        margin-bottom: 25px;
+    }
+
+    .sales-system-result-1__title,
+    .sales-system-result-2__title {
+        @include subtitle-font-text;
+        margin-top: 20px;
+        font-weight: 500;
+        padding-bottom: 20px;
+    }
+
+    .sales-system-result-1__list li,
+    .sales-system-result-2__list li {
+        padding: 6px;
+    }
+
+    .sales-system-result-1-list__item,
+    .sales-system-result-2-list__item {
+        @include subtitle-font-min;
+    }
+
+}
+
+@media screen and (min-width: $tablet) and (max-width: #{$tablet + 72px}) {
+
+    .sales-system-result-1__list li,
+    .sales-system-result-2__list li {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: #{$tablet - 1px}) {
+    .sales-system {
+        padding: 50px 40px;
+    }
+
+    .sales-system-title {
+        @include title-font_mob;
+        margin: 30px 0px;
+    }
+
+
+    .sales-system-info__text {
+        text-indent: 1.3em;
+    }
+
+    .info-text__p {
+        @include text-font_mob;
+        line-height: 1.5em;
+        font-weight: 400;
+    }
+
+    .sales-system-result {
+        padding: 20px;
+    }
+
+    .sales-system-result-1__title,
+    .sales-system-result-2__title {
+        @include subtitle-font_mob;
+        line-height: 1.25;
+        padding: 10px;
+    }
+
+    .sales-system-result-1__list li,
+    .sales-system-result-2__list li {
+        padding: 2px;
+    }
+
+    .sales-system-result-1-list__item,
+    .sales-system-result-2-list__item {
+        @include text-font_mob;
+        font-weight: 400;
+        line-height: 1.55;
+    }
+}

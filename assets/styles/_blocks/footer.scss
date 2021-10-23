@@ -1,0 +1,190 @@
+@import "../normalize";
+@import "../font/_fonts"; //шрифты
+@import "../font/font-awesome.scss"; //иконки
+@import "../font/variables"; //иконки
+@import "../_colors"; //цвета
+@import "../_screen"; //размеры
+@import "../_mixins"; //миксины
+
+.footer-wrapper {
+    width: 100vw;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-color: #000;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(/assets/images/moscow-city.jpg);
+    background-size: cover;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    row-gap: 40px;
+    flex-direction: column;
+}
+
+.triangle-topleft {
+    border-top: 50px solid $light-orange;
+    border-right: 100vw solid transparent;
+}
+
+.triangle-topright {
+    border-top: 50px solid $light-orange;
+    border-left: 100vw solid transparent;
+}
+
+.footer-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    row-gap: 40px;
+    flex-direction: column;
+}
+
+.footer-social__btn-phone {
+    width: 55px;
+}
+
+.footer-social__btn-mail {
+    width: 60px;
+}
+
+.footer-social__btn-instagram {
+    width: 70px;
+}
+
+.footer-social__btn-whatsapp,
+.footer-social__btn-telegram {
+    width: 80px;
+}
+
+.footer-social__btn {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $background-gray;
+    @include zero;
+    cursor: pointer;
+}
+
+.footer-text__title,
+.footer-text__subtitle,
+.footer-mail__subtitle {
+    color: $white;
+    @include roboto;
+}
+
+
+@media screen and (max-width: #{$tablet - 1px}) {
+    .footer {
+        padding: 0px 30px 30px 30px;
+    }
+
+    .contacts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        row-gap: 20px;
+        flex-direction: column;
+    }
+
+    .footer-text__title {
+        @include title-font_mob;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-text__subtitle {
+        @include subtitle-font_mob;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-mail__subtitle {
+        @include text-font-min_mob;
+    }
+
+    .footer-mail {
+        @include text-font_mob;
+        color: $white;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-social {
+        display: flex;
+        flex-wrap: wrap;
+        justify-self: center;
+        justify-content: center;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+}
+
+@media only screen and (min-width : $tablet) {
+    .footer {
+        padding: 70px 120px 120px 120px;
+    }
+
+    .footer-text__title {
+        @include title-font;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-text__subtitle {
+        @include subtitle-font;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-mail {
+        @include text-font;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-social {
+        display: flex;
+        flex-wrap: wrap;
+        justify-self: center;
+        justify-content: center;
+        column-gap: 20px;
+    }
+}
+
+.footer-btn-img {
+    height: 30px;
+    width: 30px;
+}
+
+.footer-btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: $light-orange;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    cursor: pointer;
+}

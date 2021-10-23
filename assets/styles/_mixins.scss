@@ -1,0 +1,193 @@
+@mixin arial {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-style: normal;
+    text-decoration: none;
+}
+
+@mixin roboto {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-style: normal;
+    text-decoration: none;
+}
+
+@mixin zero {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@mixin btn-input-size {
+    margin: 0;
+    height: 60px;
+    padding: 20px;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+// fonts
+
+@mixin title-font {
+    font-size: 2.625em;
+    font-weight: 600;
+    line-height: 45px;
+    font-family: 'Roboto', sans-serif;
+    @include zero;
+}
+
+@mixin subtitle-font-text {
+    font-size: 1.3em;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    @include zero;
+}
+
+@mixin subtitle-font {
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 35px;
+    font-family: 'Roboto', sans-serif;
+    @include zero;
+}
+
+@mixin subtitle-font-min {
+    font-size: 1.15em;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    @include zero;
+}
+
+@mixin text-font {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 35px;
+    font-family: 'Roboto', sans-serif;
+    @include zero;
+}
+
+@mixin text-font-min {
+    font-size: 0.8em;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    @include zero;
+}
+
+
+
+@mixin title-font_mob {
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 45px;
+    font-family: 'Roboto', sans-serif;
+    @include zero;
+}
+
+@mixin subtitle-font_mob {
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 35px;
+    font-family: 'Roboto', sans-serif;
+    @include zero;
+}
+
+@mixin subtitle-font-min_mob {
+    font-size: 1.15em;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    @include zero;
+}
+
+@mixin text-font_mob {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 35px;
+    font-family: 'Roboto', sans-serif;
+    @include zero;
+}
+
+@mixin text-font-min_mob {
+    font-size: 0.8em;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    @include zero;
+}
+
+.colortext {
+    color: $deep-orange;
+}
+
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
